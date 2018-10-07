@@ -1,0 +1,16 @@
+Char max= 
+Short max= 32767
+Int max= 2147483647
+long max= 2147483647
+float max= 3.40282e+38
+double max= 1.79769e+308
+long double max= 1.79769e+308
+unsigned max= 4294967295
+Char min= А
+Short min= -32768
+Int min= -2147483648
+long min= -2147483648
+float  min= 1.17549e-38
+double min= 2.22507e-308
+long double min= 2.22507e-308
+unsigned min=0
