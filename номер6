@@ -5,26 +5,22 @@ using namespace std;
 int main() {
 	int n1, n2, n3;
 	setlocale(LC_ALL, "RUSSIAN");
-	cout << "Введите 1 значение" << endl;
-	cin >> n1;
-	cout << "Введите 2 значение" << endl;
-	cin >> n2;
-	cout << "Введите 3 значение" << endl;
-	cin >> n3;
-	if (n1 > n2) {
-		if (n1 > n3) {
-			cout << "Наибольшее число равно " << n1 << endl;
-		}
+	int a, b, c, i;
+	cout << "Введите цену в рублях " << endl;
+	cin >> a;
+	cout << "Введите цену в копейках " << endl;
+	cin >> b;
+	cout << "Введите кол-во " << endl;
+	cin >> c;
+	i = 0;
+	b = b * c;
+	if (b > 99) {
+		i = b / 100;
+		b = b - (i * 100);
 	}
-		else {
-			if (n2 > n3) {
-				cout << "Наибольшее число равно " << n2 << endl;
-			}
-			else {
-				cout << "Наибольшее число равно " << n3 << endl;
-			}
-		}
-	
+	a = a * c;
+	a = a + i;
+	cout << a << " " << b;
 	cin.get();
 	cin.get();
 	return 0;
